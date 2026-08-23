@@ -1,2 +1,7 @@
 # SE411-Labs
-it is for my labs 
+
+This repository contains my solutions and work for SE411 labs.
+
+## Lab 01: Introduction to Git
+
+This lab is an introduction to Git and GitHub.
