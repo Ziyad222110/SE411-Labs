@@ -6,6 +6,29 @@
   <artifactId>lab04-maven-intro</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+  <name>Lab04 Maven Intro</name>
+  <description>This project is a basic JavaFX application built for SE411 Lab 04, demonstrating Maven dependency and plugin management.</description>
+  <url>https://github.com/Ziyad222110/SE411-Labs</url>
+
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>SE411-Tech-Company</name>
+    <url>https://github.com/Ziyad222110</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>Ziyad Ismail Alismail</name>
+      <email>222110392@psu.edu.sa</email>
+    </developer>
+  </developers>
+
   <dependencies>
     <dependency>
       <groupId>org.openjfx</groupId>
