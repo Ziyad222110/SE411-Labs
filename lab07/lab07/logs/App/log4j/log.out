@@ -1,0 +1,85 @@
+2026-10-16 20:57:45,550 INFO [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - Application is starting...
+2026-10-16 20:57:45,558 INFO [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - Computed price for F001: 915.0
+2026-10-16 20:57:45,558 INFO [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - Computed price for T001: 100.0
+2026-10-16 20:57:45,559 INFO [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - Computed price for T002: 450.0
+2026-10-16 20:57:45,559 INFO [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - Computed price for C001: 1050.0
+2026-10-16 20:57:45,560 ERROR [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - MissingInformationException: FlightBooking F002: luggage weight (kg) has not been provided
+edu.spu.se411.lab07.exception.MissingInformationException: FlightBooking F002: luggage weight (kg) has not been provided
+	at edu.spu.se411.lab07.model.Booking.validateRange(Booking.java:50)
+	at edu.spu.se411.lab07.model.FlightBooking.computeTotalPrice(FlightBooking.java:34)
+	at edu.spu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:27)
+	at edu.spu.se411.lab07.MainApp.main(MainApp.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-10-16 20:57:45,562 ERROR [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - InvalidArgumentException: FlightBooking F003: luggage weight (kg) = 55.0 is out of range [0.0, 40.0]
+edu.spu.se411.lab07.exception.InvalidArgumentException: FlightBooking F003: luggage weight (kg) = 55.0 is out of range [0.0, 40.0]
+	at edu.spu.se411.lab07.model.Booking.validateRange(Booking.java:55)
+	at edu.spu.se411.lab07.model.FlightBooking.computeTotalPrice(FlightBooking.java:34)
+	at edu.spu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:27)
+	at edu.spu.se411.lab07.MainApp.main(MainApp.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-10-16 20:57:45,563 ERROR [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - MissingInformationException: TrainBooking T003: distance (km) has not been provided
+edu.spu.se411.lab07.exception.MissingInformationException: TrainBooking T003: distance (km) has not been provided
+	at edu.spu.se411.lab07.model.Booking.validateRange(Booking.java:50)
+	at edu.spu.se411.lab07.model.TrainBooking.computeTotalPrice(TrainBooking.java:34)
+	at edu.spu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:27)
+	at edu.spu.se411.lab07.MainApp.main(MainApp.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-10-16 20:57:45,563 ERROR [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - InvalidArgumentException: TrainBooking T004: distance (km) = 2500 is out of range [1.0, 2000.0]
+edu.spu.se411.lab07.exception.InvalidArgumentException: TrainBooking T004: distance (km) = 2500 is out of range [1.0, 2000.0]
+	at edu.spu.se411.lab07.model.Booking.validateRange(Booking.java:55)
+	at edu.spu.se411.lab07.model.TrainBooking.computeTotalPrice(TrainBooking.java:34)
+	at edu.spu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:27)
+	at edu.spu.se411.lab07.MainApp.main(MainApp.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-10-16 20:57:45,563 ERROR [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - MissingInformationException: CarRentalBooking C002: rental days has not been provided
+edu.spu.se411.lab07.exception.MissingInformationException: CarRentalBooking C002: rental days has not been provided
+	at edu.spu.se411.lab07.model.Booking.validateRange(Booking.java:50)
+	at edu.spu.se411.lab07.model.CarRentalBooking.computeTotalPrice(CarRentalBooking.java:34)
+	at edu.spu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:27)
+	at edu.spu.se411.lab07.MainApp.main(MainApp.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-10-16 20:57:45,564 ERROR [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - InvalidArgumentException: CarRentalBooking C003: rental days = 0 is out of range [1.0, 30.0]
+edu.spu.se411.lab07.exception.InvalidArgumentException: CarRentalBooking C003: rental days = 0 is out of range [1.0, 30.0]
+	at edu.spu.se411.lab07.model.Booking.validateRange(Booking.java:55)
+	at edu.spu.se411.lab07.model.CarRentalBooking.computeTotalPrice(CarRentalBooking.java:34)
+	at edu.spu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:27)
+	at edu.spu.se411.lab07.MainApp.main(MainApp.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2026-10-16 20:57:45,565 INFO [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - Total of valid bookings: 2515.0
+2026-10-16 20:57:45,565 INFO [edu.spu.se411.lab07.MainApp.main()] edu.spu.se411.lab07.MainApp - Application is stopping...
