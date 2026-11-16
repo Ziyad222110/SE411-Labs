@@ -1,0 +1,46 @@
+### Part C - test the five CRUD operations
+### (VS Code "REST Client" extension: click "Send Request" above each block,
+###  or copy the same method/URL/body into Postman)
+
+@base = http://localhost:3000/api/v1/courses
+
+### 1. READ ALL - expect 200 with SE201 and CS101
+GET {{base}}
+
+### 2. READ ONE - expect 200
+GET {{base}}/1
+
+### 3. CREATE - expect 201 with a Location header
+POST {{base}}
+Content-Type: application/json
+
+{
+  "code": "SE411",
+  "name": "Web Engineering",
+  "description": "Spring Boot web APIs",
+  "credits": 3
+}
+
+### 4. UPDATE - expect 204
+PUT {{base}}/3
+Content-Type: application/json
+
+{
+  "code": "SE411",
+  "name": "Advanced Web Engineering",
+  "description": "Spring Boot + MySQL",
+  "credits": 4
+}
+
+### 5. DELETE - expect 204 (then GET {{base}}/3 should give 404)
+DELETE {{base}}/3
+
+### Validation check - expect 400 (credits out of range)
+POST {{base}}
+Content-Type: application/json
+
+{
+  "code": "X1",
+  "name": "Bad course",
+  "credits": 20
+}
